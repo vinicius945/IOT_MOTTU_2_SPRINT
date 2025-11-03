@@ -1,0 +1,448 @@
+[
+    {
+        "id": "07b08de252a07208",
+        "type": "tab",
+        "label": "Monitoramento IoT",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4e05483fa60bb678",
+        "type": "ui_tab",
+        "name": "Consulta",
+        "icon": "history"
+    },
+    {
+        "id": "30855a4dc03dddf6",
+        "type": "ui_tab",
+        "name": "Monitoramento",
+        "icon": "dashboard"
+    },
+    {
+        "id": "5f63d8d16dc761ed",
+        "type": "ui_group",
+        "name": "Dashboard Moto",
+        "tab": "30855a4dc03dddf6",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "824a670b33782e0a",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Broker",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "node-red-mqtt",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "68ac82e4512d5124",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5de95a66bfce083e",
+        "type": "sqlitedb",
+        "db": "motos.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "e007823f668f4305",
+        "type": "ui_tab",
+        "name": "Consulta",
+        "icon": "history"
+    },
+    {
+        "id": "tab",
+        "type": "ui_tab",
+        "name": "Monitoramento",
+        "icon": "dashboard"
+    },
+    {
+        "id": "grupo",
+        "type": "ui_group",
+        "name": "Dashboard Moto",
+        "tab": "tab",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b9e1608e8294a7f",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Broker",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "node-red-mqtt",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fa15a28c2362ed9b",
+        "type": "sqlitedb",
+        "db": "motos.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "91ef1a8e9c71be5a",
+        "type": "MySQL-Server-Connector",
+        "name": "",
+        "host": "localhost",
+        "port": "3306",
+        "user": "root",
+        "password": "",
+        "tls": false,
+        "database": "sce_db"
+    },
+    {
+        "id": "b1a2d3c4.5e6f78",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Broker Público",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "node-red-azure-sql-client",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true
+    },
+    {
+        "id": "96f35c7d9fe61013",
+        "type": "mqtt in",
+        "z": "07b08de252a07208",
+        "name": "Receber dados MQTT",
+        "topic": "motos/telemetria",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "824a670b33782e0a",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "b141294f838939ac",
+                "a5e20817e3031644",
+                "af54b1dacf6fad72"
+            ]
+        ]
+    },
+    {
+        "id": "dc73b27f8fcc130a",
+        "type": "ui_text",
+        "z": "07b08de252a07208",
+        "group": "5f63d8d16dc761ed",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Estado Moto",
+        "label": "Status da Moto",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 610,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a832ccbfdb40974f",
+        "type": "ui_chart",
+        "z": "07b08de252a07208",
+        "name": "Gráfico Distância",
+        "group": "5f63d8d16dc761ed",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "label": "Distância (cm)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "0",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4"
+        ],
+        "outputs": 1,
+        "x": 610,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a96a3e817b60217d",
+        "type": "ui_gauge",
+        "z": "07b08de252a07208",
+        "name": "Distância Atual",
+        "group": "5f63d8d16dc761ed",
+        "order": 3,
+        "width": 6,
+        "height": 2,
+        "gtype": "gage",
+        "title": "Distância Atual (cm)",
+        "label": "cm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 600,
+        "y": 190,
+        "wires": []
+    },
+    {
+        "id": "6897dcf7c82eb41f",
+        "type": "debug",
+        "z": "07b08de252a07208",
+        "name": "Dados para o Banco",
+        "active": true,
+        "tosidebar": true,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b141294f838939ac",
+        "type": "debug",
+        "z": "07b08de252a07208",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 260,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a5e20817e3031644",
+        "type": "function",
+        "z": "07b08de252a07208",
+        "name": "Processar Dados",
+        "func": "try {\n    const data = JSON.parse(msg.payload);\n    const msgDistancia = { payload: data.distancia };\n    const msgEstado = { payload: data.estado };\n    return [msgDistancia, msgEstado];\n} catch (e) {\n    node.warn(\"Erro ao parsear JSON: \" + e.message);\n    return null;\n}",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "a832ccbfdb40974f",
+                "a96a3e817b60217d"
+            ],
+            [
+                "dc73b27f8fcc130a"
+            ]
+        ]
+    },
+    {
+        "id": "af54b1dacf6fad72",
+        "type": "function",
+        "z": "07b08de252a07208",
+        "name": "function 1",
+        "func": "try {\n    const data = JSON.parse(msg.payload);\n\n    // Ajusta a query para o padrão MySQL\n    msg.topic = \"INSERT INTO telemetria (distancia, estado, busca, timestamp_raw, dispositivo) VALUES (:distancia, :estado, :busca, :timestamp_raw, :dispositivo)\";\n\n    // O msg.payload se torna o objeto de parâmetros\n    msg.payload = {\n        distancia: data.distancia,\n        estado: data.estado,\n        busca: data.busca,\n        timestamp_raw: data.timestamp, // aqui mudamos para timestamp_raw\n        dispositivo: data.dispositivo\n    };\n\n    return msg;\n} catch (e) {\n    node.warn(\"Erro ao processar mensagem JSON: \" + e.message);\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "6897dcf7c82eb41f",
+                "cbbf45c643503d9a"
+            ]
+        ]
+    },
+    {
+        "id": "cbbf45c643503d9a",
+        "type": "MySQL-Connector",
+        "z": "07b08de252a07208",
+        "server": "91ef1a8e9c71be5a",
+        "name": "MySQLMotosDB",
+        "x": 710,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16ce942a331b4b1a",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-sqlite": "1.1.1",
+            "node-red-contrib-mysql-config": "1.0.4"
+        }
+    }
+]
