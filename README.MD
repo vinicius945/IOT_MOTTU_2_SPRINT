@@ -87,11 +87,10 @@ Vinicius Prates Altafini — RM556183
 
 🔗 Links do Projeto
 
-Repositório da API Java: https://github.com/DerBrasilianer/Challenge_Java_2025_Sprint4
 
-Repositório do Projeto IoT (Node-RED): https://github.com/vinicius945/iot-mottu
+Link do Video: https://youtu.be/8z1EH5x-MO4?si=8JiGlIuPNfsPzfJ3
 
-Link do vídeo: (a ser adicionado)
+Link do WorkWi: https://wokwi.com/projects/442734327702711297
 
 ▶️ Execução do Projeto
 
