@@ -45,17 +45,17 @@ A API Java Spring Boot acessa o banco para exibir, consultar e listar os registr
 
 ```mermaid
 graph TD;
-    MQTT["📡 Broker MQTT (HiveMQ)"]
-    NodeRED["🔧 Node-RED"]
-    DATABASE["🗄️ Banco de Dados MySQL"]
-    API["💻 API Java Spring Boot"]
-    Dashboard["📊 Dashboard Web"]
+   MQTT["Broker MQTT (HiveMQ)"]
+   NodeRED["Node-RED"]
+   DATABASE["Banco de Dados MySQL"]
+   API["API Java Spring Boot"]
+   Dashboard["Dashboard Web"]
 
-    MQTT -->|Publica dados IoT| NodeRED
-    NodeRED -->|Insere dados via SQL| DATABASE
-    NodeRED -->|Exibe dados em tempo real| Dashboard
-    API -->|Consulta registros| DATABASE
-    API -->|Exibe dados via Thymeleaf| Dashboard
+   MQTT -->|Publica dados IoT| NodeRED
+   NodeRED -->|Insere dados via SQL| DATABASE
+   NodeRED -->|Exibe dados em tempo real| Dashboard
+   API -->|Consulta registros| DATABASE
+   API -->|Exibe dados via Thymeleaf| Dashboard
 
 
 
