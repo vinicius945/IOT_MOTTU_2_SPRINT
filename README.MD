@@ -56,7 +56,7 @@ graph TD;
    NodeRED -->|Exibe dados em tempo real| Dashboard
    API -->|Consulta registros| DATABASE
    API -->|Exibe dados via Thymeleaf| Dashboard
-
+```
 
 
 🧩 Componentes Utilizados
