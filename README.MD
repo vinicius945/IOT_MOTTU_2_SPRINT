@@ -88,7 +88,7 @@ Vinicius Prates Altafini — RM556183
 🔗 Links do Projeto
 
 
-Link do Video: https://youtu.be/8z1EH5x-MO4?si=8JiGlIuPNfsPzfJ3
+Link do Video: https://youtu.be/_Ptoz1NUe_Y
 
 Link do WorkWi: https://wokwi.com/projects/442734327702711297
 
